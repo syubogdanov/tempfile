@@ -34,7 +34,8 @@ int main(void)
 
 > [!NOTE]  
 > If the OS API does not allow to create a file / directory, the functions are
-> identical to calling `std::tmpnam(nullptr)`
+> identical to calling `std::tmpnam(nullptr)`. In all other cases, the path to
+> an already existing object is returned.
 
 ## Installation
 
