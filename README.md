@@ -46,9 +46,9 @@ load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
 
 http_archive(
     name = "tempfile",
-    sha256 = "96b5e24647e8dc963eb004d6252da79f30f91c80dd0b7471169dfec9c968b43e",
-    strip_prefix = "tempfile-1.0",
-    url = "https://github.com/syubogdanov/tempfile/archive/refs/tags/v1.0.zip",
+    sha256 = "2bc62163f5c0cf6516db677e39802b6313b9c0aebd749684379ef278e9797d86",
+    strip_prefix = "tempfile-1.1",
+    url = "https://github.com/syubogdanov/tempfile/archive/refs/tags/v1.1.zip",
 )
 ```
 
