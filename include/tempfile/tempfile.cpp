@@ -1,4 +1,4 @@
-#include "tempfile.hpp"
+#include "include/tempfile/tempfile.hpp"
 
 #include <cstdio>
 #include <fstream>
@@ -6,8 +6,7 @@
 
 static std::mutex mutex;
 
-std::filesystem::path tempfile::mkdtemp(void)
-{
+std::filesystem::path tempfile::mkdtemp(void) {
     mutex.lock();
 
     auto dirname = std::tmpnam(nullptr);
@@ -17,8 +16,7 @@ std::filesystem::path tempfile::mkdtemp(void)
     return std::filesystem::path(dirname);
 }
 
-std::filesystem::path tempfile::mkstemp(void)
-{
+std::filesystem::path tempfile::mkstemp(void) {
     mutex.lock();
 
     auto filename = std::tmpnam(nullptr);

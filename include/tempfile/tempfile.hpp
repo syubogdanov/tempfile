@@ -3,13 +3,12 @@
 
 #include <filesystem>
 
-namespace tempfile
-{
+namespace tempfile {
 
 std::filesystem::path mkdtemp(void);
 
 std::filesystem::path mkstemp(void);
 
-} // namespace tempfile
+}  // namespace tempfile
 
 #endif  // INCLUDE_TEMPFILE_TEMPFILE_HPP_
